@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Happy Birthday Swoccho 🎂</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Poppins:wght@300;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="locked">
+  <div id="stars" aria-hidden="true"></div>
+  <canvas id="fx" aria-hidden="true"></canvas>
+
+  <!-- SCENE 1: INTRO -->
+  <section id="intro" class="screen">
+    <p class="eyebrow">A LITTLE SURPRISE FOR SOMEONE SPECIAL...</p>
+    <div class="gift" id="gift1" aria-hidden="true">
+      <div class="lid"></div>
+      <div class="box"></div>
+    </div>
+    <button class="btn" id="openBtn">OPEN YOUR SURPRISE ✨</button>
+    <button class="link" id="skipBtn">Skip intro</button>
+    <div class="flash" id="flash"></div>
+  </section>
+
+  <main id="main" hidden>
+    <!-- SCENE 2: HERO -->
+    <section id="hero" class="screen">
+      <div class="floaters" id="floaters" aria-hidden="true"></div>
+      <h1 class="r r1">HAPPY BIRTHDAY</h1>
+      <h2 class="name bn r r2" lang="bn">নাঈমুর শাহরিয়ার স্বচ্ছ</h2>
+      <h3 class="en r r3">Nayemur Shahriar Swoccho</h3>
+      <p class="date r r4">20 OCTOBER • YOUR SPECIAL DAY</p>
+      <p class="msg r r5">Today isn't just another day. It's the day someone amazing was born.</p>
+      <div class="mini-cake r r5" aria-hidden="true">🎂</div>
+      <a class="btn r r6" href="#letter" data-scroll>OPEN YOUR BIRTHDAY LETTER 💌</a>
+    </section>
+
+    <!-- SCENE 3: LETTER -->
+    <section id="letter" class="screen">
+      <article class="paper reveal" id="paper" lang="bn">
+        <p class="line bn">শুভ জন্মদিন, স্বচ্ছ! ❤️🎂</p>
+
+        <p class="line bn">
+           তুই সবসময় ভালো থাকিস, হাসিখুশি থাকিস আর নিজের মতো করে জীবনটা উপভোগ
+          করিস।  ❤️
+        </p>
+
+        <p class="line bn">
+          জীবনে অনেক কিছুই আসবে, কখনো ভালো সময়, কখনো খারাপ। সবকিছু সুন্দরভাবে সামলে নিস, নিজের ওপর বিশ্বাস রাখিস আর কখনো
+          নিজের স্বপ্নগুলো ছেড়ে দিস না। তোর জীবনে অনেক ভালো কিছু আসুক, সবসময় এই দোয়াই করি।
+        </p>
+
+        <p class="line bn">
+          তোর পাশে থেকে জন্মদিনের শুভেচ্ছাটা জানাতে পারলাম না! দূরে থাকলেও, তোর জন্য huge ভালোবাসা আর শুভকামনা ❤️
+        </p>
+
+        <p class="line bn">
+          আবারও শুভ জন্মদিন, দোস্ত! তোর জীবনের Every Year , Every month, Every days, Every min, Everry Second যেন আরও সুন্দর হয়, সব স্বপ্ন পূরণ হোক আর আমাদের বন্ধুত্বটা
+          এমনই থাকুক Alltime। অনেক ভালোবাসা রইল, স্বচ্ছ! ❤️✨
+        </p>
+
+        <p class="line sign">With lots of love, your friend Jakaria Hasan❤️</p>
+      </article>
+    </section>
+
+    <!-- SCENE 4: CAKE -->
+    <section id="cake" class="screen reveal">
+      <div class="cake-wrap" id="cakeWrap">
+        <div class="candles"><span class="candle"><i class="flame"></i><i class="smoke"></i></span><span
+            class="candle"><i class="flame"></i><i class="smoke"></i></span><span class="candle"><i class="flame"></i><i
+              class="smoke"></i></span></div>
+        <div class="layer l3"></div>
+        <div class="layer l2"></div>
+        <div class="layer l1"></div>
+        <div class="plate"></div>
+      </div>
+      <p class="wish" id="wishMsg" aria-live="polite">May all your beautiful wishes come true!</p>
+      <button class="btn" id="wishBtn">MAKE A WISH ✨</button>
+    </section>
+
+    <!-- SCENE 5: SECRET GIFT -->
+    <section id="secret" class="screen reveal">
+      <p class="eyebrow">WAIT... THERE'S ONE MORE SURPRISE!</p>
+      <p class="sub">A little gift, made just for you.</p>
+      <button class="gift float" id="gift2" aria-label="Open the gift"><span class="lid"></span><span
+          class="box"></span></button>
+    </section>
+
+    <!-- SCENE 6: GALLERY -->
+    <section id="gallery" class="screen reveal">
+      <h2 class="title">Little Moments, Beautiful Memories</h2>
+      <!-- HOW TO ADD PHOTOS: put your pictures in an "images" folder next to index.html,
+         name them photo1.jpg ... photo6.jpg (or edit the src paths below). Missing files show a placeholder.
+         Edit each alt text and caption to describe the real photo. -->
+      <div class="grid">
+        <figure class="card"><img src="images/photo1.jpg" alt="Memory 1">
+          <figcaption>Memory one</figcaption>
+        </figure>
+        <figure class="card"><img src="images/photo2.jpg" alt="Memory 2">
+          <figcaption>Memory two</figcaption>
+        </figure>
+        <figure class="card"><img src="images/photo3.jpg" alt="Memory 3">
+          <figcaption>Memory three</figcaption>
+        </figure>
+        <figure class="card"><img src="images/photo4.jpg" alt="Memory 4">
+          <figcaption>Memory four</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- SCENE 7: FINALE -->
+    <section id="finale" class="screen">
+      <p class="f eyebrow">ONE MORE TIME...</p>
+      <h2 class="f name bn" lang="bn">শুভ জন্মদিন, স্বচ্ছ! 🎂❤️</h2>
+      <p class="f sub">Keep smiling. Keep dreaming. Keep being YOU.</p>
+      <p class="f date">20-10-26 A day worth celebrating.</p>
+      <p class="f made">Made with ❤️ for Swoccho by Jakaria Hasan</p>
+      <div class="row">
+        
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div class="overlay" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalText" hidden>
+    <div class="glass">
+      <p id="modalText">You're not just another person in this world. You're someone who makes the world a little better
+        just by being in it. Keep shining, Swoccho! 🌟</p>
+      <button class="btn" id="closeModal">CONTINUE CELEBRATING</button>
+    </div>
+  </div>
+  <!-- Lightbox -->
+  <div class="overlay" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+    <div class="glass lb">
+      <div id="lbContent"></div><button class="btn" id="closeLb">CLOSE</button>
+    </div>
+  </div>
+
+  <button class="fab" id="musicBtn" aria-pressed="false" aria-label="Play music">♪</button>
+  <button class="fab top" id="topBtn" aria-label="Back to top" hidden>↑</button>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+
+</html>
